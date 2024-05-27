@@ -1,10 +1,10 @@
 {
-  "name": "techdadi-express-ts-starter",
-  "version": "1.0.0-beta",
+  "name": "techdadi-express-starter-ts",
+  "version": "0.1.1-beta",
   "description": "CLI for creating a new Express TypeScript starter project",
   "main": "express-ts-starter.js",
   "bin": {
-    "techdadi-express-ts-starter": "express-ts-starter.js"
+    "techdadi-express-starter-ts": "express-ts-starter.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

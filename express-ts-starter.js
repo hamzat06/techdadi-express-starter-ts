@@ -26,6 +26,15 @@ program
       );
     }
 
+    // Prompt the user for their choice of package manager
+    const packageManagerChoices = ["npm", "yarn"];
+    const packageManagerIndex = readlineSync.keyInSelect(
+      packageManagerChoices,
+      "Choose a package manager:",
+      { cancel: false }
+    );
+    const packageManager = packageManagerChoices[packageManagerIndex];
+
     const templatePath = path.resolve(__dirname, "starter-template");
     const projectPath = path.resolve(process.cwd(), projectName);
 
@@ -39,6 +48,11 @@ program
       execSync(
         `rsync -av --exclude 'node_modules' ${templatePath}/ ${projectPath}`
       );
+
+      // Install dependencies using the chosen package manager
+      console.log(`Installing dependencies with ${packageManager}...`);
+      execSync(`cd ${projectPath} && ${packageManager} install`);
+
       console.log(`Created new Express TypeScript project in ${projectName}`);
     } catch (error) {
       console.error(`Error: Failed to create project. ${error.message}`);
