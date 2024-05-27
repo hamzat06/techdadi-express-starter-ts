@@ -1,0 +1,5 @@
+{
+  "name": "techdadi-express-ts-starter",
+  "description": "Create a new Express TypeScript starter project",
+  "bin": "./express-ts-starter.js"
+}
