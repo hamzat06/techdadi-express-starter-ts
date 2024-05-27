@@ -1,6 +1,6 @@
 {
   "name": "techdadi-express-starter-ts",
-  "version": "0.1.3-beta",
+  "version": "0.1.4-beta",
   "description": "CLI for creating a new Express TypeScript starter project",
   "main": "express-ts-starter.js",
   "bin": {
@@ -11,6 +11,13 @@
   },
   "author": "Hamzat Ajanaku",
   "license": "MIT",
+  "keywords": [
+    "express",
+    "typescript",
+    "starter",
+    "project",
+    "cli"
+  ],
   "dependencies": {
     "commander": "^8.1.0",
     "readline-sync": "^1.4.10"
