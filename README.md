@@ -5,7 +5,7 @@ CLI for creating a new Express TypeScript starter project.
 ## Installation
 
 ```bash
-npm install -g techdadi-express-ts-starter
+npm install -g techdadi-express-starter-ts
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install -g techdadi-express-ts-starter
 To create a new Express TypeScript project, run the following command:
 
 ```bash
-techdadi-express-ts-starter <project-name>
+techdadi-express-starter-ts <project-name>
 ```
 
 ### Creating a Project with the Latest Version Always
@@ -23,7 +23,7 @@ techdadi-express-ts-starter <project-name>
 If you want to create a project using the latest version of Express TypeScript Starter without installing it globally, you can use npx:
 
 ```bash
-npx techdadi-express-ts-starter <project-name>
+npx techdadi-express-starter-ts <project-name>
 ```
 
 ## Features
