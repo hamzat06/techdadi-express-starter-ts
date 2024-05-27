@@ -13,3 +13,9 @@ npm install -g techdadi-express-ts-starter
 ```bash
 techdadi-express-ts-starter my-project
 ```
+
+## Creating a with the latest
+
+```bash
+npx techdadi-express-ts-starter my-project
+```
