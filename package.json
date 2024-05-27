@@ -1,6 +1,6 @@
 {
   "name": "techdadi-express-starter-ts",
-  "version": "0.1.10-beta",
+  "version": "0.1.11-beta",
   "description": "CLI for creating a new Express TypeScript starter project",
   "main": "express-ts-starter.js",
   "bin": {

@@ -7,6 +7,7 @@ import {
 } from './utils/errorUtils';
 import errorHandler from './middleware/errorHandler';
 import limiter from './middleware/rateLimitMiddleware';
+import cors from 'cors';
 
 const app = express();
 const PORT = env.PORT || 3000;
@@ -14,7 +15,12 @@ const PORT = env.PORT || 3000;
 handleUncaughtExceptions();
 handleUnhandledRejections();
 
+// Enabling body parser
 app.use(express.json());
+
+// Enabling Cors
+app.use(cors());
+app.options("*", cors());
 
 // Apply rate limiting middleware to all routes
 app.use(limiter);
